@@ -92,8 +92,8 @@ ul li span i {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-  mask: url(../images/wave-2.svg) no-repeat center / contain;
-  -webkit-mask: url(../images/wave-2.svg) no-repeat center / contain;
+  mask: url(../images/wave-2.svg) no-repeat center / cover;
+  -webkit-mask: url(../images/wave-2.svg) no-repeat center / cover;
   background-color: var(--bs-white);
 }
 /* waves  */
@@ -241,7 +241,17 @@ header nav ul li:hover a {
 #software p {
   opacity: 0.6;
 }
-
 /**********************************
 ********** - software - ***********
 ***********************************/
+
+
+/* responsive */
+@media only screen and (max-width: 800px) {
+  #responsability .col-md-4:not(:last-child):after{
+    display: none;
+  }
+  #software .wave {
+    display: none;
+  }
+}
