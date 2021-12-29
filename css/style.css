@@ -242,10 +242,10 @@ header.menu-container nav ul li:hover a {
   background-color: var(--color-layer-bg);
   padding-bottom: 200px;
 }
-
+/* 
 #software p {
   opacity: 0.6;
-}
+} */
 /**********************************
 ********** - software - ***********
 ***********************************/
@@ -272,7 +272,7 @@ header.menu-container nav ul li:hover a {
   box-shadow: 0 0 30px rgb(0 0 0 / 10%);
   padding: 50px;
   position: relative;
-  border: 0
+  border: 0;
 }
 #testimonials .wave {
   height: 100px;
@@ -288,5 +288,12 @@ header.menu-container nav ul li:hover a {
   }
   #software .wave {
     display: none;
+  }
+
+  #testimonials {
+    background-size: cover;
+  }
+  #testimonials .card {
+    margin-bottom: 60px;
   }
 }
