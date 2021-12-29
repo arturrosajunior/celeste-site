@@ -1,6 +1,7 @@
 :root {
   --color-hover: #fbcb6b;
   --color-layer-bg: #f0f5f8;
+  --color-purple: #4223af;
 }
 
 ::-webkit-scrollbar {
@@ -21,7 +22,9 @@ body {
   /* retirar */
   margin-bottom: 300px;
 }
-
+section {
+  position: relative;
+}
 /* tag a  */
 a {
   text-decoration: none;
@@ -77,7 +80,6 @@ ul li span i {
 .wave {
   /* posição  */
   position: absolute;
-  bottom: -3px;
   z-index: 99;
 
   /* criando o bloco  */
@@ -85,23 +87,31 @@ ul li span i {
   height: 20%;
   width: 100%;
 }
+.wave.wave-top {
+  top: -3px;
+}
+.wave.wave-bottom {
+  bottom: -3px;
+}
 .wave-1 {
   background: no-repeat center/cover url(../images/wave.svg);
 }
 .wave-2 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
   mask: url(../images/wave-2.svg) no-repeat center / cover;
   -webkit-mask: url(../images/wave-2.svg) no-repeat center / cover;
   background-color: var(--bs-white);
+}
+.wave-invert-y {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 /* waves  */
 
 /**********************************
 ********** - header - *************
 ***********************************/
-header {
+header.menu-container {
   width: 100%;
   padding: 10px 0px;
   background: linear-gradient(
@@ -114,12 +124,12 @@ header {
   z-index: 500;
 }
 
-header > .container {
+header.menu-container > .container {
   border-bottom: solid 1px #3d4ba3;
 }
 
 /* logo  */
-header .logo {
+header.menu-container .logo {
   background: no-repeat center/contain url(../images/c.jfif);
   text-indent: -9999px;
   width: 100%;
@@ -127,12 +137,12 @@ header .logo {
 }
 
 /* menu, rede social  */
-header nav,
-header .social {
+header.menu-container nav,
+header.menu-container .social {
   height: 100%;
 }
 
-header nav ul,
+header.menu-container nav ul,
 .social ul {
   /* zerando */
   list-style: none;
@@ -148,11 +158,11 @@ header nav ul,
   height: 100%;
 }
 
-header nav ul li {
+header.menu-container nav ul li {
   position: relative;
 }
 
-header nav ul li a,
+header.menu-container nav ul li a,
 .social ul li a {
   color: var(--bs-white);
   text-decoration: none;
@@ -165,7 +175,7 @@ header nav ul li a,
 
 /* hover menu li */
 
-header nav ul li::after {
+header.menu-container nav ul li::after {
   content: "";
   display: block;
   width: 100%;
@@ -176,12 +186,12 @@ header nav ul li::after {
   transition: 0.3s all;
 }
 
-header nav ul li:hover::after {
+header.menu-container nav ul li:hover::after {
   transform: translate(10px);
   opacity: 1;
 }
 
-header nav ul li:hover a {
+header.menu-container nav ul li:hover a {
   color: var(--bs-white);
 }
 
@@ -192,10 +202,6 @@ header nav ul li:hover a {
 /**********************************
 ********** - Banner - *************
 ***********************************/
-
-#banner {
-  position: relative;
-}
 #banner button {
   display: none;
 }
@@ -234,7 +240,6 @@ header nav ul li:hover a {
 ***********************************/
 #software {
   background-color: var(--color-layer-bg);
-  position: relative;
   padding-bottom: 200px;
 }
 
@@ -245,10 +250,40 @@ header nav ul li:hover a {
 ********** - software - ***********
 ***********************************/
 
+/**********************************
+********** - testimonials - ***********
+***********************************/
+#testimonials {
+  background: no-repeat top/contain
+    url(https://sktperfectdemo.com/themepack/software/wp-content/uploads/2020/06/section4-bg.jpg);
+}
+
+#testimonials .testimonial-quote {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+}
+#testimonials .testimonial-quote i {
+  color: var(--color-purple);
+  font-size: 40px;
+}
+#testimonials .card {
+  background-color: var(--bs-white);
+  box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+  padding: 50px;
+  position: relative;
+  border: 0
+}
+#testimonials .wave {
+  height: 100px;
+}
+/**********************************
+********** - testimonials - ***********
+***********************************/
 
 /* responsive */
 @media only screen and (max-width: 800px) {
-  #responsability .col-md-4:not(:last-child):after{
+  #responsability .col-md-4:not(:last-child):after {
     display: none;
   }
   #software .wave {
