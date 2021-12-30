@@ -53,6 +53,10 @@ a.btn:hover {
 }
 /* tag a  */
 
+figure{
+  margin: 0;
+}
+
 /* list default */
 ul {
   list-style: none;
@@ -79,7 +83,6 @@ ul li span i {
 /* waves  */
 .wave {
   /* posição  */
-  position: absolute;
   z-index: 99;
 
   /* criando o bloco  */
@@ -87,6 +90,7 @@ ul li span i {
   height: 20%;
   width: 100%;
 }
+
 .wave.wave-top {
   top: -3px;
 }
