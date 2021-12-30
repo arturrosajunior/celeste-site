@@ -84,6 +84,7 @@ ul li span i {
 .wave {
   /* posição  */
   z-index: 99;
+  position: absolute;
 
   /* criando o bloco  */
   display: block;
@@ -246,6 +247,7 @@ header.menu-container nav ul li:hover a {
   background-color: var(--color-layer-bg);
   padding-bottom: 200px;
 }
+
 /* 
 #software p {
   opacity: 0.6;
@@ -283,6 +285,19 @@ header.menu-container nav ul li:hover a {
 }
 /**********************************
 ********** - testimonials - ***********
+***********************************/
+
+
+/**********************************
+********** - plans - ***********
+***********************************/
+#plans{
+  background: var(--color-layer-bg);
+  padding-bottom: 200px;
+
+}
+/**********************************
+********** - plans - ***********
 ***********************************/
 
 /* responsive */
