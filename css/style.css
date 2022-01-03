@@ -3,6 +3,7 @@
   --color-layer-bg: #f0f5f8;
   --color-purple: #4223af;
   --color-danger: #f6463e;
+  --color-dark: #222933;
 }
 
 ::-webkit-scrollbar {
@@ -36,6 +37,9 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: inherit;
+}
+a.link {
+  color: var(--color-purple);
 }
 
 a.btn {
@@ -264,7 +268,7 @@ header.menu-container nav ul li:hover a {
 ********** - testimonials - ***********
 ***********************************/
 #testimonials {
-  background: no-repeat top/contain
+  background: no-repeat top/cover
     url(https://sktperfectdemo.com/themepack/software/wp-content/uploads/2020/06/section4-bg.jpg);
 }
 
@@ -313,9 +317,9 @@ header.menu-container nav ul li:hover a {
 
 #plans .card .card-header {
   background-color: transparent;
-  background: no-repeat top/cover
+  background: no-repeat top/contain
     url(https://sktperfectdemo.com/themepack/software/wp-content/uploads/2020/06/pricing-bg.png);
-  padding: 60px 0px;
+  padding: 40px 0px 60px;
   border: 0;
 }
 
@@ -341,14 +345,60 @@ header.menu-container nav ul li:hover a {
   transform: translateY(50px);
   transition: 0.5s all;
 }
-#plans .card:hover .card-body a.btn {
-  transform: translateY(0px);
-}
 /**********************************
 ********** - plans - ***********
 ***********************************/
 
+/**********************************
+********** - news - ***********
+***********************************/
+
+#news .list-news i {
+  font-size: 0.9rem;
+  color: var(--color-danger);
+}
+#news .list-news span {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+#news .list-news h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 15px 0 35px;
+}
+
+#news .list-news a.link {
+  font-size: 1rem;
+}
+
+/**********************************
+********** - news - ***********
+***********************************/
+
+/**********************************
+********** - CONACTO - ***********
+***********************************/
+#contact {
+  background-color: var(--color-dark);
+}
+
+#contact .social ul li a {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: var(--bs-white);
+  background-color: var(--bs-gray-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* responsive */
+@media only screen and (max-width: 1600px) {
+  #testimonials {
+    background-size: contain;
+  }
+}
 @media only screen and (max-width: 800px) {
   #responsability .col-md-4:not(:last-child):after {
     display: none;
