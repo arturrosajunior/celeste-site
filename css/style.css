@@ -21,8 +21,6 @@
 body {
   background-color: var(--bs-white);
   overflow-x: hidden;
-  /* retirar */
-  margin-bottom: 300px;
 }
 section {
   position: relative;
@@ -381,7 +379,9 @@ header.menu-container nav ul li:hover a {
 #contact {
   background-color: var(--color-dark);
 }
-
+#contact .border-bottom{
+  border-bottom: 1px solid var(--bs-gray-dark) !important;
+}
 #contact .social ul li a {
   height: 60px;
   width: 60px;
@@ -391,6 +391,35 @@ header.menu-container nav ul li:hover a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#contact .content-contact {
+  position: relative;
+  margin-top: 70px;
+}
+#contact .content-contact h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+#contact .content-contact ul li a,
+#contact .content-contact p span,
+#contact .content-contact p {
+  color: #bebebe;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#contact .content-contact ul li{
+  margin-bottom: 0px;
+}
+#contact .content-contact ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #bebebe;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 /* responsive */
