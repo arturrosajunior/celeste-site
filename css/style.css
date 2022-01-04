@@ -1,7 +1,7 @@
 :root {
   --color-hover: #fbcb6b;
   --color-layer-bg: #f0f5f8;
-  --color-purple: #4223af;
+  --color-purple: #125896;
   --color-danger: #f6463e;
   --color-dark: #222933;
 }
@@ -267,7 +267,7 @@ header.menu-container nav ul li:hover a {
 ***********************************/
 #testimonials {
   background: no-repeat top/cover
-    url(https://sktperfectdemo.com/themepack/software/wp-content/uploads/2020/06/section4-bg.jpg);
+    url(../images/section4-bg.jpg);
 }
 
 #testimonials .testimonial-quote {
@@ -315,9 +315,9 @@ header.menu-container nav ul li:hover a {
 
 #plans .card .card-header {
   background-color: transparent;
-  background: no-repeat top/contain
-    url(https://sktperfectdemo.com/themepack/software/wp-content/uploads/2020/06/pricing-bg.png);
-  padding: 40px 0px 60px;
+  background: no-repeat top/cover
+    url(../images/pricing-bg.jpg);
+  padding: 60px 0px 80px;
   border: 0;
 }
 
