@@ -71,7 +71,7 @@ ul li {
   position: relative;
 }
 ul li span {
-  background-color: #5629b7;
+  background-color: var(--color-purple);
   color: #fff;
   margin-right: 18px;
   text-align: center;
